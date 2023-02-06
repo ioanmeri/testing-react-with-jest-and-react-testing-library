@@ -57,3 +57,40 @@ https://github.com/testing-library/eslint-plugin-testing-library
 https://github.com/testing-library/eslint-plugin-jest-dom
 
 ---
+
+## ESLint for Testing Library and Jest DOM
+
+```
+npm install eslint-plugin-testing-library eslint-plugin-jest-dom
+```
+
+- Create root dir `.vscode` and add:
+
+```
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
+
+---
+
+## Review: Setting up ESLint and Prettier
+
+- ESLint:
+
+  - `npm install eslint-plugin-testing-library eslint-plugin-jest-dom`
+  - **Remove** eslintConfig **from package.json**
+  - Create `.eslintrc.json` and add standard config
+  - Install ESLint extension for VSCode
+  - Create `.vscode/settings.json` and add standard config
+  - Add `.eslintcache` and `.vscode` to `.gitignore`
+
+- Prettier:
+  - Add settings to `.vscode/settings.json`
+  - Install Prettier on VSCode
+
+---

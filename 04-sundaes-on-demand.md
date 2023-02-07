@@ -52,3 +52,11 @@ expect(linkElement).toHaveAttribute('checked');
 ```
 import {useEffect} from 'react';
 ```
+
+---
+
+## Styling
+
+- course will use react-bootstrap
+  - you can use any styling you want, or none
+- `npm install react-bootstrap bootstrap`

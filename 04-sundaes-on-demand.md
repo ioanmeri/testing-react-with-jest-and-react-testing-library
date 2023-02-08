@@ -60,3 +60,18 @@ import {useEffect} from 'react';
 - course will use react-bootstrap
   - you can use any styling you want, or none
 - `npm install react-bootstrap bootstrap`
+
+---
+
+## Code Organization
+
+- Organize components by pages
+
+  - **test** directory for each page
+  - Jest will find and run any files that end in `.test.js`
+
+- `src/pages/summary`
+  - `OrderSummary.jsx`
+  - `SummaryForm.jsx`
+- `src/pages/summary/test`
+  - `SummaryForm.test.jsx`

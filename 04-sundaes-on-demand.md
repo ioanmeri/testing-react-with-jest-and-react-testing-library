@@ -75,3 +75,55 @@ import {useEffect} from 'react';
   - `SummaryForm.jsx`
 - `src/pages/summary/test`
   - `SummaryForm.test.jsx`
+
+---
+
+## User event
+
+A way to simulate actual user events than just DOM events (the difference with fireEvent)
+
+**Systax**
+
+```
+test("test case", async () = {
+  const user = userEvent.setup();
+
+  await user.click(checkbox);
+})
+```
+
+---
+
+## screen Query Methods
+
+```
+command[All]ByQueryType
+```
+
+**command**
+
+- get: expect element to be in DOM
+- query: expect element not to be in DOM
+- find: expect element to appear async
+
+**[All]**
+
+- (exclude) expect only on match
+- (include) expect more than one match
+
+**QueryType**
+
+- Role (most preferred)
+- AltText (images)
+- Text (display elements)
+- Form elements
+
+  - PlaceholderText
+  - LabelText
+  - DisplayValue
+
+- https://testing-library.com/docs/dom-testing-library/api-queries
+- https://testing-library.com/docs/react-testing-library/cheatsheet/
+- https://testing-library.com/docs/guide-which-query
+
+---

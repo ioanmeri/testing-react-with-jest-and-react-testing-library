@@ -51,3 +51,11 @@ rest.get('http://localhost:3030/scoops', (req, res, ctx) => {})
       https://mswjs.io/docs/basics/response-resolver
 
 ---
+
+## Mock Service Worker in Tests
+
+**Options Component** -> **GET / scoops** -> Server
+
+Mock service worker is going to intercept the request and send back the handler response to the options component.
+
+---

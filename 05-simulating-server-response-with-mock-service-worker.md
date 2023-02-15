@@ -59,3 +59,16 @@ rest.get('http://localhost:3030/scoops', (req, res, ctx) => {})
 Mock service worker is going to intercept the request and send back the handler response to the options component.
 
 ---
+
+## await findBy
+
+When you are waiting for something to appear asynchronously on the page, you must use **await findBy**
+
+**Review**
+
+- Mock Service Worker mimics response from server
+  - create handler
+  - create server
+  - update **setupTests** to listen for requests
+
+---

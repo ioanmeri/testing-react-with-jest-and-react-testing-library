@@ -72,3 +72,23 @@ When you are waiting for something to appear asynchronously on the page, you mus
   - update **setupTests** to listen for requests
 
 ---
+
+## Only and skip tests
+
+I can use `test.only` and `test.skip` to run only or skip specific tests.
+
+---
+
+## Review
+
+- Override Mock Service Worker response for individual tests
+
+- Misleading Unable to find role="alert" error
+
+- Isolate file by typing p in Jest watch mode
+
+- Isolate test within file with test.only or test.skip
+
+- waitFor for tests where await findBy\* isn't enough
+
+---

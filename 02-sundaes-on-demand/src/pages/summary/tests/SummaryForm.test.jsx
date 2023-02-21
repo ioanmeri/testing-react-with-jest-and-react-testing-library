@@ -7,17 +7,15 @@ test("Initial conditions", () => {
   const checkbox = screen.getByRole("checkbox", {
     name: /terms and conditions/i,
   });
-
   expect(checkbox).not.toBeChecked();
 
-  const confirmButton = screen.getByRole("button", {
-    name: /confirm order/i,
-  });
+  const confirmButton = screen.getByRole("button", { name: /confirm order/i });
   expect(confirmButton).toBeDisabled();
 });
 
-test("Checkbox disables button on first click and enables on second click", async () => {
+test("Checkbox enables button on first click and disables on second click", async () => {
   const user = userEvent.setup();
+
   render(<SummaryForm />);
   const checkbox = screen.getByRole("checkbox", {
     name: /terms and conditions/i,
@@ -31,11 +29,11 @@ test("Checkbox disables button on first click and enables on second click", asyn
   expect(confirmButton).toBeDisabled();
 });
 
-test("popover response to hover", async () => {
+test("popover responds to hover", async () => {
   const user = userEvent.setup();
   render(<SummaryForm />);
 
-  // popup starts out hidden
+  // popover starts out hidden
   const nullPopover = screen.queryByText(
     /no ice cream will actually be delivered/i
   );

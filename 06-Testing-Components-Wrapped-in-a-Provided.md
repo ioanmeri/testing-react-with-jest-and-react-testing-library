@@ -12,3 +12,19 @@
     - make context provider with internal state via `useState`
     - Provider value state getters and setters
 - export custom hook and provider
+
+---
+
+## Review: Scoops Subtotal with Context
+
+- getByText **to find total**
+  - **exact option** set to false
+- number inputs
+  - **await** and **findBy** (coming from server async)
+  - spinbutton role
+  - **userEvent.clear** to clear existing text
+  - **userEvent.type** to enter number
+- wrapper option to render to apply context provider
+- Redefine Testing Library render to access universally
+
+--

@@ -27,4 +27,33 @@
 - wrapper option to render to apply context provider
 - Redefine Testing Library render to access universally
 
---
+---
+
+## Race Condition
+
+- Test renders component
+
+- Component triggers network call
+
+- Test function exits
+
+- Unmount component
+
+- Network call returns
+  - unmounted component error or not wrapped in act error
+
+---
+
+## No Race Condition
+
+- Test renders component
+
+- Component triggers network call
+
+- Unmount component
+
+- Network call is canceled
+
+- Test function exits
+
+---

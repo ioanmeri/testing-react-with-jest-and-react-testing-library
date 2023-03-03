@@ -43,3 +43,30 @@ test("button has correct initial color", () => {
   - There is no Mock Service Worker handler associated with this route and method.
 
 ---
+
+## Jest Mocks as Props
+
+- Added a prop to top level page components
+  - `setOrderPhase`
+- May need to pass as prop when rendering in tests
+  - TypeScript, PropTypes or other prop validators will require
+  - Or will get called in tests, but doesn't matter for test
+  - Hypothetical example: contect updated passed as a prop
+  - ScoopOptions input triggers prop function
+  - testing errors on invalid input: don't care about result of function
+
+---
+
+## Passing a Mock as a Prop
+
+- How to pass when rendering component in test?
+- `jest.fn()`
+  - Jest mock function
+  - Does not do anything
+  - Merely a placeholder to avoid errors
+
+```
+<OrderEntry setOrderPhase={jest.fn()} />
+```
+
+---
